@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Hello WebRTC</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="myDIV" class="header">
+  <h2>Web RTC Streamer</h2>
+</div>
+
+<div id="play-area" class="play-area">
+    <video id="localVideo" autoplay playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <div>
+        <button id="startButton">Start</button>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+
+</div>
+
+<script src="streamer.js"></script>
+
+<div class="footer">
+    <a href="https://thinkuldeep.com">Home</a> |
+
+    Source code : <a href="https://github.com/thinkuldeep/streamer">https://github.com/thinkuldeep/streamer</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+    background-color: #f4bb84;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f4bb84;
+    padding: 10px 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Clear floats after the header */
+.footer:after, .play-area:after, .header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.play-area {
+    background-color: #f4ecf0;
+    padding: 10px 40px;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+video {
+    max-width: 100%;
+}
