@@ -218,7 +218,7 @@ function callAction() {
     trace(`Using audio device: ${audioTracks[0].label}.`);
   }
 
-  const servers = null;  // Allows for RTC server configuration.
+  const servers = {'iceServers': [{'urls': 'stun:stun.l.google.com:19302'}]};  // Allows for RTC server configuration.
 
   // Create peer connections and add behavior.
   localPeerConnection = new RTCPeerConnection(servers);
